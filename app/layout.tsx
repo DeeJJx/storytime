@@ -9,9 +9,8 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Find Fun Card Games for Any Number of Players | Card Game Finder",
-  description: "Discover random card games for 2 to 10 players. Play with a standard deck of cards and find rules for popular games.",
-  
+  title: "Generated Story Based on Your Keywords | Story Generator",
+  description: "Read a custom-generated story based on the keywords you provided. Immerse yourself in a unique story where your imagination takes the lead.",
 };
 
 export default function RootLayout({

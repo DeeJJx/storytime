@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
 
     const { keywords } = body
 
-    const prompt = `Write a short story of 750 words based on these 5 words: ${keywords.join(", ")}. Include the story name.`;
+    const prompt = `Write a short story of 300 words based on these 5 words: ${keywords.join(", ")}. Include the story name.`;
 
     try {
         const response = await cohere.chat({

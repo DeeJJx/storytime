@@ -25,7 +25,7 @@ export async function POST(request: NextRequest) {
                 content: prompt,
               },
             ],
-            max_tokens: 1000
+            max_tokens: 500
           });
           
 

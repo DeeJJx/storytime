@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { useSession } from "next-auth/react";
 import { useEffect, useState } from 'react';
-import cardGames from "@/data/cardGames";
 
 
 export default function Favourites() {
@@ -59,25 +58,7 @@ export default function Favourites() {
       <h1 className="text-4xl font-bold text-center mt-2 mb-6">Favourites</h1>
       <h2 className="text-m font-bold text-center mt-2 mb-6">Sign up to permanently store your favourite games</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-20">
-        {userFavourites.map((fav, index) => {
-          let objective = '';
-          cardGames.forEach(cardGame => {
-            if(cardGame.name === fav){
-              objective = cardGame.objective
-            }
-          })
-          return (
-            <div className="card bg-primary text-primary-content w-96" key={index}>
-              <div className="card-body">
-                <h2 className="card-title">{fav}</h2>
-                <p>{objective}</p>
-                <div className="card-actions justify-end">
-                  <Link href={`/games/${fav.toLowerCase()}`} className="btn">View Rules</Link>
-                </div>
-              </div>
-            </div>
-          )
-        })}
+        Some favs
       </div>
       <Link className="btn" href='/' >Home</Link>
     </main>

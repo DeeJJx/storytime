@@ -21,7 +21,7 @@ export default function Login(){
         }
 
         if(res?.ok){
-            return router.push('/favourites')
+            return router.push('/')
         }
     }
 
